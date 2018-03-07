@@ -18,7 +18,6 @@ namespace WEBSITE_NAMESPACE {
         private $enableJavascript;
         private  $enableRedirects;
         private   $enableWarnings;
-        private   $enableExplicit;
         private     $cacheEnabled;
         private           $mobile;
         private             $main;
@@ -26,13 +25,12 @@ namespace WEBSITE_NAMESPACE {
         function __construct() {
 
             // Set the main variables
-            $this -> mobile              = $_SESSION['mobile_session'];
-            $this -> cacheEnabled        =   $_SESSION['cacheEnabled'];
-            $this -> enableJavascript    =     $_SESSION['javascript'];
-            $this -> enableRedirects     =      $_SESSION['redirects'];
-            $this -> enableWarnings      =       $_SESSION['warnings'];
-            $this -> enableExplicit      =       $_SESSION['explicit'];
-            $this -> main                =                  new Main();
+            $this -> enableJavascript    =     $_SESSION['config']['JAVASCRIPT'];
+            $this -> enableRedirects     =       $_SESSION['config']['REDIRECT'];
+            $this -> enableWarnings      =       $_SESSION['config']['WARNINGS'];
+            $this -> cacheEnabled        =  $_SESSION['config']['CACHE_ENABLED'];
+            $this -> mobile              = $_SESSION['config']['MOBILE_SESSION'];
+            $this -> main                =                            new Main();
 
 
             // Go to initalization;
