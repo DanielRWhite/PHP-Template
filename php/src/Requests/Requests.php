@@ -38,7 +38,6 @@ namespace WEBSITE_NAMESPACE {
 
             foreach($this -> requestArray as $request) {
                 if($request == $this -> RequestURL) {
-                    print_r("RESETTING & Redirecting");
                     $this -> Handle -> $request();
                 }
             }
