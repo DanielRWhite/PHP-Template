@@ -34,18 +34,6 @@ namespace WEBSITE_NAMESPACE {
       print eval('?>'. file_get_contents($code));
       $output = ob_get_contents();
 
-      /*
-      foreach($_SESSION['settings'] as $item => $value) {
-
-        if(strpos($output, '{' . $item . '}') !== false) {
-
-          $output = str_replace('{' . $item . '}', $value, $output);
-
-        }
-
-      }
-      */
-
       ob_end_clean();
       print $output;
 

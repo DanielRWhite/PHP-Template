@@ -40,9 +40,9 @@ namespace WEBSITE_NAMESPACE {
         private function GenerateHeaders() {
 
             Methods::iElement('head',    'start');
-            Methods::iElement('title',   'start'); print_r("WEBSITE_NAMESPACE"); Methods::iElement('title', 'end');
-            foreach($this -> stylesheets as $item)            { print_r("<link rel='stylesheet' href='$item'>"); };
-            foreach(    $this -> scripts as $item)            {        print_r("<script src='$item'></script>"); };
+            Methods::iElement('title',   'start'); print_r($_SESSION['config']['WEBSITE_NAMESPACE']); Methods::iElement('title', 'end');
+            foreach($this -> stylesheets as $item)                                 { print_r("<link rel='stylesheet' href='$item'>"); };
+            foreach(    $this -> scripts as $item)                                 {        print_r("<script src='$item'></script>"); };
             Methods::iElement('head',      'end');
 
         }
