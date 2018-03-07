@@ -51,7 +51,8 @@ namespace WEBSITE_NAMESPACE {
 
             Methods::iElement('body', 'start');
             switch($this -> baseURL) {
-                default: Methods::execute_file($this -> htmlDir . "/INDEX/index.php"); break;
+                case '': Methods::execute_file($this -> htmlDir . "/INDEX/index.php"); break;
+                default: Methods::execute_file($this -> htmlDir .   "/404/index.php"); break;
             }
             Methods::iElement('body',   'end');
 

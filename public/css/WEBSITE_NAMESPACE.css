@@ -36,3 +36,8 @@ body, html {
     text-transform: uppercase;
     letter-spacing:   0.1vmax;
 }
+
+.welcome p a {
+    text-decoration:      none;
+    color:             #d32f2f;
+}
