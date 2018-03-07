@@ -21,6 +21,7 @@ namespace WEBSITE_NAMESPACE {
             unset($this -> vars, $i);
             session_destroy();
             header('Location: /');
+            
         }
         
     }
