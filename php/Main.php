@@ -2,10 +2,10 @@
 
 namespace WEBSITE_NAMESPACE {
     
-    include_once 'src/Misc/Methods.php';
-    include_once 'src/Config/Config.php';
-    include_once 'src/Database/Database.php';
-    include_once 'src/Interface/Interface.php';
+    include 'src/Interface/Interface.php';
+    include   'src/Database/Database.php';
+    include       'src/Config/Config.php';
+    include        'src/Misc/Methods.php';
 
     class Main {
 

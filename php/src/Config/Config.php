@@ -11,7 +11,7 @@ namespace WEBSITE_NAMESPACE {
         function __construct() {
 
             $this -> DocumentRoot   =                               $_SESSION['php_root'];
-            $this ->  config_src    = $this -> DocumentRoot . "src/Config/src/config.ini";
+            $this ->   config_src   = $this -> DocumentRoot . "src/Config/src/config.ini";
 
             switch($_SESSION['config']['ISSET']) {
                 case True:  $this -> configInit =  True; break;

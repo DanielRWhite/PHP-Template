@@ -3,27 +3,27 @@ namespace WEBSITE_NAMESPACE {
 
     class UserInterface {
 
-        private           $URLid;
-        private         $htmlDir;
-        private         $baseURL;
-        private         $scripts;
-        private       $scriptDir;
-        private     $stylesheets;
-        private    $DocumentRoot;
-        private    $windowHeight;
         private $adblockDetected;        
+        private    $windowHeight;
+        private    $DocumentRoot;
+        private     $stylesheets;
+        private       $scriptDir;
+        private         $scripts;
+        private         $baseURL;
+        private         $htmlDir;
+        private           $URLid;
 
         function __construct() {
 
             $this -> adBlockDetected    =                               Methods::adBlockDetected();
-            $this -> DocumentRoot       =                                    $_SESSION['php_root'];
-            $this -> windowHeight       =                                      Methods::urlArray();
-            $this -> stylesheets        =                    Array( "/css/WEBSITE_NAMESPACE.css" );
-            $this -> windowWidth        =                                Methods::getWindowWidth();
-            $this -> scriptDir          =          $this -> DocumentRoot . "site_contents/scripts";
-            $this -> scripts            =                    Array(   "/js/WEBSITE_NAMESPACE.js" );
-            $this -> baseURL            =                             Methods::urlArray()[0] || "";
-            $this -> htmlDir            =             $this -> DocumentRoot . "site_contents/html";
+            $this ->    DocumentRoot    =                                    $_SESSION['php_root'];
+            $this ->    windowHeight    =                                      Methods::urlArray();
+            $this ->     stylesheets    =                    Array( "/css/WEBSITE_NAMESPACE.css" );
+            $this ->     windowWidth    =                                Methods::getWindowWidth();
+            $this ->       scriptDir    =          $this -> DocumentRoot . "site_contents/scripts";
+            $this ->         scripts    =                    Array(   "/js/WEBSITE_NAMESPACE.js" );
+            $this ->         baseURL    =                             Methods::urlArray()[0] || "";
+            $this ->         htmlDir    =             $this -> DocumentRoot . "site_contents/html";
 
         }
 
