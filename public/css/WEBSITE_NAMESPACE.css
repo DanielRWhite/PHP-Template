@@ -1,0 +1,38 @@
+body, html {
+    background: rbga(245, 245, 245, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.welcome {
+    position: relative;
+    width:     100vmax;
+    height:     10vmax;
+    float:        left;
+    top:           50%;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform:    translateY(-50%);
+    -ms-transform:     translateY(-50%);
+    transform:         translateY(-50%);
+}
+
+.welcome p {
+    position: absolute;
+    text-align: center;
+    width:        100%;
+    top:           50%;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform:    translateY(-50%);
+    -ms-transform:     translateY(-50%);
+    transform:         translateY(-50%);
+
+    font-family: "Open Sans", sans-serif;
+    color:       rgba(38, 38, 38, 0.7);
+    font-size:                   1.5vmax;
+    font-weight:                    bold;
+
+    text-transform: uppercase;
+    letter-spacing:   0.1vmax;
+}
